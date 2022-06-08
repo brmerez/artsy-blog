@@ -4,8 +4,6 @@ import { motion } from "framer-motion"
 import { Post as IPost } from "../../types/Post";
 
 export default function Post({post}:{post:IPost}) {
-  const lastWord = post.title.split(" ").pop();
-  const withoutLastWord = post.title.split(" ").slice(0, -1).join(" ");
   return (
     <>
       <HeaderWrapper>
@@ -30,16 +28,13 @@ export default function Post({post}:{post:IPost}) {
         <br />
         <br />
         <br />
-        <div style={{textAlign: "center"}}>
-          <img src="https://picsum.photos/600/400" />
-        </div>
       </Container>  
     </>
   )
 }
 
 const Title = styled.h2`
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: lighter;
   position: absolute;
   top: 50%;
@@ -61,11 +56,13 @@ const HeaderWrapper = styled.div`
 
 const Container = styled.div`
   padding: 3rem 0;
-  width: clamp(400px, 50%, 800px);
+  width: clamp(300px, 100%, 800px);
   margin: 0 auto;
+  /* border: 1px solid magenta; */
+  /* margin-right:auto; */
   min-height: calc(100vh);
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   line-height: 1.5;
   p{
     color: #2e2e2e;

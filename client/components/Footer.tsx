@@ -3,7 +3,7 @@ import styled from "styled-components"
 export default function Footer() {
   return (
     <FooterStyles>
-      <Heading>merez</Heading>
+      <small>&copy; 2022 Bruno Merez. Todos os direitos reservados. </small>
     </FooterStyles>
   )
 }
@@ -21,6 +21,6 @@ const FooterStyles = styled.footer`
   align-items: center;
   justify-content: center;
   border-top: 1px solid #e0e0e0;
-  background-color: #e0e0e0;
+  background-color: #707070;
   /* z-index: 9999; */
 `;

@@ -16,7 +16,7 @@ interface CardProps {
 
 export default function Card({data, tags, style, url=`https://picsum.photos/300`}: CardProps) {
   return (
-    <Link href={`/posts/${data.slug}`}>
+    <Link href={`/blog/${data.slug}`}>
       <CustomAnchor style={style}>
         <CardStyles
           onClick={() => console.log(data.title)}
@@ -154,7 +154,7 @@ const CardStyles = styled(motion.div)`
       border-radius: 4px;
     }
     ${Backdrop} {
-      background-color: rgba(100, 68, 55, 0.9);
+      background-color: #644437e5;
     }
     ${Heading} {
       transition: all 100ms ease;

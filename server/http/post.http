@@ -4,7 +4,7 @@ POST http://localhost:3004/api/posts
 Content-Type: application/json
 
 {
-  "title": "Tropicalea Jacta Est",
+  "title": "DDD e Clean Architecture",
   "content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laudantium necessitatibus sit non eveniet culpa ipsa magni doloribus fuga molestiae, a ab harum mollitia hic quos earum suscipit obcaecati veniam eligendi. Fugit neque, veritatis delectus doloremque vitae odio quis a dignissimos aliquam, harum voluptas sapiente nesciunt debitis molestiae reprehenderit vero?</p>",
   "published": true
 }
